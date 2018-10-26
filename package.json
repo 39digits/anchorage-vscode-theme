@@ -6,14 +6,21 @@
     "url": "https://github.com/39digits/anchorage-vscode-theme.git"
   },
   "description": "A Light color theme optimised for JavaScript development",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "39digits",
   "icon": "images/icon-anchorage.png",
   "engines": {
     "vscode": "^1.15.0"
   },
-  "categories": ["Themes"],
-  "keywords": ["vscode", "theme", "light", "anchorage"],
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "vscode",
+    "theme",
+    "light",
+    "anchorage"
+  ],
   "contributes": {
     "themes": [
       {
