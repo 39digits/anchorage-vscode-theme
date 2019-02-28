@@ -52,7 +52,7 @@
     },
     {
       "name": "Function Call",
-      "scope": "meta.function-call entity.name.function",
+      "scope": "meta.function-call entity.name.function, meta.method-call entity.name.function",
       "settings": {
         "fontStyle": "italic",
         "foreground": "#DD4A76"
@@ -68,8 +68,7 @@
     },
     {
       "name": "Function Entity Name",
-      "scope":
-        "meta.function.json entity.name.function, meta.object-literal.key.js, meta.object-literal.key.js entity.name.function.js",
+      "scope": "meta.function.json entity.name.function, meta.object-literal.key.js, meta.object-literal.key.js entity.name.function.js",
       "settings": {
         "fontStyle": "",
         "foreground": "#dd4a76"
@@ -93,8 +92,7 @@
     },
     {
       "name": "Braces",
-      "scope":
-        "meta.brace, punctuation.definition.parameters.begin, punctuation.definition.parameters.end,\n\t\t\tpunctuation.definition.block, punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end,\n\t\t\tpunctuation.section.embedded.begin, punctuation.section.embedded.end",
+      "scope": "meta.brace, punctuation.definition.parameters.begin, punctuation.definition.parameters.end,\n\t\t\tpunctuation.definition.block, punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end,\n\t\t\tpunctuation.section.embedded.begin, punctuation.section.embedded.end",
       "settings": {
         "fontStyle": "",
         "foreground": "#59646A"
@@ -126,7 +124,7 @@
     },
     {
       "name": "Keyword (Conditionals)",
-      "scope": "keyword.control.conditional",
+      "scope": "keyword.control.conditional, source.php keyword.control",
       "settings": {
         "fontStyle": "italic bold",
         "foreground": "#606060"
@@ -150,8 +148,7 @@
     },
     {
       "name": "Storage",
-      "scope":
-        "storage, storage.type.js, storage.type.ts, storage.var.type.js, storage.var.type.ts",
+      "scope": "storage, storage.type.js, storage.type.ts, storage.var.type.js, storage.var.type.ts",
       "settings": {
         "fontStyle": "",
         "foreground": "#006dc7"
@@ -166,9 +163,32 @@
       }
     },
     {
+      "name": "(PHP) this",
+      "scope": "variable.language.this.php",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#606060"
+      }
+    },
+    {
+      "name": "(PHP) Docblock Keyword (Other)",
+      "scope": "keyword.other.phpdoc.php",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#606060"
+      }
+    },
+    {
+      "name": "(PHP) Docblock Keyword (Type)",
+      "scope": "comment.block.documentation.phpdoc.php keyword.other.type.php",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#91a2b0"
+      }
+    },
+    {
       "name": "String",
-      "scope":
-        "string.quoted, string, punctuation.tag.definition.string, tag.string",
+      "scope": "string.quoted, string, punctuation.tag.definition.string, tag.string",
       "settings": {
         "fontStyle": "",
         "foreground": "#4ba144"
@@ -200,8 +220,7 @@
     },
     {
       "name": "[HTML] - Attribute open/close tags",
-      "scope":
-        "punctuation.definition.tag.begin, punctuation.definition.tag.end",
+      "scope": "punctuation.definition.tag.begin, punctuation.definition.tag.end",
       "settings": {
         "fontStyle": "italic",
         "foreground": "#4c555a"
@@ -224,8 +243,7 @@
     },
     {
       "name": "[HTML] Tags",
-      "scope":
-        "text.html.mt meta.tag.structure.any.html string.quoted.double.html",
+      "scope": "text.html.mt meta.tag.structure.any.html string.quoted.double.html",
       "settings": {
         "foreground": "#779e69"
       }
@@ -294,8 +312,7 @@
     },
     {
       "name": "[HTML] Attribute Value Quotes",
-      "scope":
-        "punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
+      "scope": "punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
       "settings": {
         "fontStyle": "bold",
         "foreground": "#59646A"
